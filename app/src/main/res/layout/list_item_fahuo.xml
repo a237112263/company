@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/text_xuhao"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textStyle="bold"
+        android:text="序号" />
+
+    <View
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:background="#f9b68b"/>
+
+    <TextView
+        android:id="@+id/text_bianma"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="商品编码" />
+    
+    <View 
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:background="#f9b68b"/>
+
+    <TextView
+        android:id="@+id/text_guige"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="规格编码" />
+
+    <View
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:background="#f9b68b"/>
+
+    <TextView
+        android:id="@+id/text_fahuoriqi"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:gravity="center"
+        android:text="发货日期" />
+
+
+    <View
+        android:layout_width="1.5dip"
+        android:layout_height="fill_parent"
+        android:background="#f9b68b"/>
+
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:gravity="center"
+        android:text="数量" />
+
+
+</LinearLayout>

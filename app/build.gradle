@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.keyi.report"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile files('libs/mpandroidchartlibrary-2-1-6.jar')
+    compile 'com.karumi:dexter:2.2.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
+    compile files('libs/BmobSDK_V3.4.7_0527.jar')
+    compile project(':SmsObserverLibrary')
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.wang.avi:library:1.0.0'
+    compile'com.nineoldandroids:library:2.4.0'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'com.blankj:utilcode:1.3.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.mylhyl:commonrefreshlayout:2.0'
+}
